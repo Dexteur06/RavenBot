@@ -1,4 +1,4 @@
-¥cmd install slot.js module.exports = {
+module.exports = {
   config: {
     name: "slot",
     aliases: ["slot"],
@@ -51,13 +51,13 @@
       await usersData.set(event.senderID, userData);
       return message.reply(`◥✇◣𝗜𝗧𝗔𝗖𝗛𝗜 𝗗𝗘𝗫𝗧𝗘𝗨𝗥◢✇◤
  ───────────
-🙆🏾‍♂️,[ ${resultString} ],🙆🏾‍♂️ \ 🤑|𝐁𝐫𝐚𝐯𝐨 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧é 𝐥𝐞 𝐝𝐨𝐮𝐛𝐥𝐞 𝐝𝐞 𝐭𝐨𝐧 𝐟𝐫𝐢𝐜 《${winAmount}€》!`);
+🎉🎊,[ ${resultString} ],🎊🎉 \ 🤑|𝐁𝐫𝐚𝐯𝐨 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧é 𝐥𝐞 𝐝𝐨𝐮𝐛𝐥𝐞 𝐝𝐞 𝐭𝐨𝐧 𝐟𝐫𝐢𝐜 《${winAmount}€》!`);
     } else {
       userData.money -= betAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀                                                                       
+      return message.reply(`◥✇◣𝗜𝗧𝗔𝗖𝗛𝗜 𝗗𝗘𝗫𝗧𝗘𝗨𝗥◢✇◤                                                                       
   ─────────── 
-◥✇◣,[ ${resultString} ],◢✇◤
+😌,[ ${resultString}😌 ],◢✇◤
 😜| 𝐃𝐞𝐬𝐨𝐥𝐞  𝐭'𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 《${betAmount}€》.`);
     }
   }
