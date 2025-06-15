@@ -1,4 +1,4 @@
-module.exports = {
+¥cmd install slot.js module.exports = {
   config: {
     name: "slot",
     aliases: ["slot"],
@@ -9,7 +9,7 @@ module.exports = {
     shortDescription: "𝙰𝚖𝚞𝚜𝚎𝚜 𝚝𝚘𝚒 𝚋𝚒𝚎𝚗 𝚊𝚞 𝚓𝚎𝚞 𝚍𝚞 𝚑𝚊𝚜𝚊𝚛𝚍",
     longDescription: "𝐒𝐞𝐮𝐥 𝐥𝐞 𝐡𝐚𝐬𝐚𝐫𝐝 𝐭𝐮 𝐫𝐞𝐧𝐝𝐫𝐚𝐬 𝐫𝐢𝐜𝐡𝐞 𝐨𝐮 𝐩𝐚𝐮𝐯𝐫𝐞...𝐁𝐨𝐧𝐧𝐞 𝐜𝐡𝐚𝐧𝐜𝐞",
     category: "game",
-    guide: "{pn} <Uchiha/Senju> <amount of money>"
+    guide: "{pn} <Boy/Girl> <amount of money>"
   },
 
   onStart: async function ({ args, message, usersData, event }) {
@@ -18,7 +18,7 @@ module.exports = {
     const user = event.senderID;
     const userData = await usersData.get(event.senderID);
 
-    if (!["uchiha", "senju"].includes(betType)) {
+    if (!["boy", "girl"].includes(betType)) {
       return message.reply("👨🏾‍🎨| 𝗖𝗵𝗼𝗶𝘀𝗶 𝗲𝗻𝘁𝗿𝗲 : 'boy 𝗼𝘂 'girl.");
     }
 
@@ -61,4 +61,4 @@ module.exports = {
 😜| 𝐃𝐞𝐬𝐨𝐥𝐞  𝐭'𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 《${betAmount}€》.`);
     }
   }
-    }
+  }
