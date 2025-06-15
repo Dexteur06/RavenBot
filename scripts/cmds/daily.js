@@ -20,7 +20,7 @@ module.exports = {
 		},
 		envConfig: {
 			rewardFirstDay: {
-				coin: 100,
+				coin: 25000,
 				exp: 10
 			}
 		}
@@ -46,8 +46,8 @@ module.exports = {
 			friday: "Friday",
 			saturday: "Saturday",
 			sunday: "Sunday",
-			alreadyReceived: "You have already received the gift",
-			received: "You have received %1 coin and %2 exp"
+			alreadyReceived: "𝑬𝒔𝒄𝒓𝒐 𝒍𝒂̀ 𝒕𝒖 𝒂 𝒅𝒆́𝒋𝒂̀ 𝒓𝒆𝒄̧𝒖 𝒅𝒆 𝒍'𝒂𝒓𝒈𝒆𝒏𝒕 🤦‍♂️",
+			received: "𝑽𝒐𝒖𝒔 𝒂𝒗𝒆𝒛 𝒓𝒆𝒄̧𝒖 %1 𝒅'𝒂𝒓𝒈𝒆𝒏𝒕 𝒅𝒆 𝒍𝒂 𝒑𝒂𝒓𝒕 𝒅𝒆 𝒎𝒐𝒏 𝐁𝐨𝐬𝐬 💰💰 et %2 exp 𝒔𝒊 𝒗𝒐𝒖𝒔 𝒔𝒐𝒖𝒉𝒂𝒊𝒕𝒆́ 𝒂𝒗𝒐𝒊𝒓 𝒑𝒍𝒖𝒔 𝒅'𝒂𝒓𝒈𝒆𝒏𝒕 𝒆́𝒄𝒓𝒊𝒗𝒆𝒛: ¥𝒔𝒍𝒐𝒕 𝒃𝒐𝒚 𝒆𝒕 𝒎𝒊𝒔𝒆́"
 		}
 	},
 
