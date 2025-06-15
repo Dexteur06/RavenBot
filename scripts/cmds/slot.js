@@ -9,7 +9,7 @@ module.exports = {
     shortDescription: "𝙰𝚖𝚞𝚜𝚎𝚜 𝚝𝚘𝚒 𝚋𝚒𝚎𝚗 𝚊𝚞 𝚓𝚎𝚞 𝚍𝚞 𝚑𝚊𝚜𝚊𝚛𝚍",
     longDescription: "𝐒𝐞𝐮𝐥 𝐥𝐞 𝐡𝐚𝐬𝐚𝐫𝐝 𝐭𝐮 𝐫𝐞𝐧𝐝𝐫𝐚𝐬 𝐫𝐢𝐜𝐡𝐞 𝐨𝐮 𝐩𝐚𝐮𝐯𝐫𝐞...𝐁𝐨𝐧𝐧𝐞 𝐜𝐡𝐚𝐧𝐜𝐞",
     category: "game",
-    guide: "{pn} <Boy/Girl> <amount of money>"
+    guide: "{pn} <Girl/Boy> <amount of money>"
   },
 
   onStart: async function ({ args, message, usersData, event }) {
@@ -19,7 +19,7 @@ module.exports = {
     const userData = await usersData.get(event.senderID);
 
     if (!["boy", "girl"].includes(betType)) {
-      return message.reply("👨🏾‍🎨| 𝗖𝗵𝗼𝗶𝘀𝗶 𝗲𝗻𝘁𝗿𝗲 : 'boy 𝗼𝘂 'girl.");
+      return message.reply("👨🏾‍🎨| 𝗖𝗵𝗼𝗶𝘀𝗶 𝗲𝗻𝘁𝗿𝗲 : '𝐛𝐨𝐲 𝗼𝘂 '𝐠𝐢𝐫𝐥.");
     }
 
     if (!Number.isInteger(betAmount) || betAmount < 50) {
@@ -51,14 +51,14 @@ module.exports = {
       await usersData.set(event.senderID, userData);
       return message.reply(`◥✇◣𝗜𝗧𝗔𝗖𝗛𝗜 𝗗𝗘𝗫𝗧𝗘𝗨𝗥◢✇◤
  ───────────
-🎉🎊,[ ${resultString} ],🎊🎉 \ 🤑|𝐁𝐫𝐚𝐯𝐨 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧é 𝐥𝐞 𝐝𝐨𝐮𝐛𝐥𝐞 𝐝𝐞 𝐭𝐨𝐧 𝐟𝐫𝐢𝐜 《${winAmount}€》!`);
+🎉,[ ${resultString} ],🎊 \ 🤑|𝐁𝐫𝐚𝐯𝐨 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧é 𝐥𝐞 𝐝𝐨𝐮𝐛𝐥𝐞 𝐝𝐞 𝐭𝐨𝐧 𝐟𝐫𝐢𝐜 《${winAmount}€》!`);
     } else {
       userData.money -= betAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`◥✇◣𝗜𝗧𝗔𝗖𝗛𝗜 𝗗𝗘𝗫𝗧𝗘𝗨𝗥◢✇◤                                                                       
+      return message.reply(`𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀                                                                       
   ─────────── 
-😌,[ ${resultString}😌 ],◢✇◤
+◥✇◣,[ ${resultString} ],◢✇◤
 😜| 𝐃𝐞𝐬𝐨𝐥𝐞  𝐭'𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 《${betAmount}€》.`);
     }
   }
-  }
+        }
