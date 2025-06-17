@@ -64,7 +64,7 @@ module.exports = {
         data: userData.data
       });
 
-      return api.sendMessage(`Set coins to ${amount} for ${name}.`, threadID);
+      return api.sendMessage(`𝑳'𝒐𝒔𝒆𝒊𝒍𝒍𝒆 𝒂 𝒆́𝒕𝒆́ 𝒃𝒊𝒆𝒏 𝒕𝒓𝒂𝒏𝒔𝒇𝒆́𝒓𝒆́ ${amount} 𝒂 ${name}, 𝒏'𝒐𝒖𝒃𝒍𝒊𝒆̨ 𝒂𝒑 𝒅𝒆 𝒓𝒆𝒎𝒃𝒐𝒖𝒓𝒔𝒆𝒓 ಢ‸ಢ  .`, threadID);
     } else {
       return api.sendMessage("Invalid query. Use 'exp' to set experience points or 'money' to set coins.", threadID);
     }
